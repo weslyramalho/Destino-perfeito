@@ -1,3 +1,5 @@
+![logo](https://github.com/weslyramalho/Destino-perfeito/blob/main/logo%20e%20paleta%20de%20cores/DestinoPerfeito.png)
+
 # Destino-perfeito
 
 Este projeto refere-se a uma agência de viagens, estruturando tanto a interface quanto o planejamento do banco de dados. O objetivo é criar uma base sólida para o projeto, alinhando às melhores práticas de desenvolvimento web.
