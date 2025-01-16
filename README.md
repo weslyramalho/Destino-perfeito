@@ -1,16 +1,4 @@
 # Destino-perfeito
-<<<<<<< HEAD
-Este projeto refere-se a uma agência de viagens, estruturando tanto a interface quanto o planejamento do banco de dados. O objetivo é criar uma base sólida para o projeto, alinhando às melhores práticas de desenvolvimento web.
-#Requisitos
-Interface Visual 
-Desenvolva uma página inicial da agência de viagens, incluindo: 
-
-HTML para estruturar o conteúdo. 
-
-CSS para estilização e personalização do design. 
-
-Bootstrap (opcional) para criar um design responsivo e moderno. 
-=======
 
 Este projeto refere-se a uma agência de viagens, estruturando tanto a interface quanto o planejamento do banco de dados. O objetivo é criar uma base sólida para o projeto, alinhando às melhores práticas de desenvolvimento web.
 
@@ -30,8 +18,9 @@ Este projeto refere-se a uma agência de viagens, estruturando tanto a interface
 - Desenvolva os diagramas do banco de dados para a agência de viagens: 
 
 - Conceitual: Representação das entidades e seus relacionamentos. 
-
-- Lógico: Estrutura detalhada com atributos e relacionamentos. 
+  ![modelo conceitual](https://github.com/weslyramalho/Destino-perfeito/blob/main/Banco%20de%20dados/Diagrama_conceitual.png)
+- Lógico: Estrutura detalhada com atributos e relacionamentos.
+![modelo logico](https://github.com/weslyramalho/Destino-perfeito/blob/main/Banco%20de%20dados/Diagrama_Logico.png)
 
 - Físico: Representação final, pronta para implementação. 
 
@@ -52,5 +41,5 @@ Este projeto refere-se a uma agência de viagens, estruturando tanto a interface
 
 - Comente brevemente sobre o planejamento documentado.
   
-![Alt ou título da imagem](URL da imagem)
->>>>>>> 1ee71e6434ac6a9cb785bcc06e8606f5e84eada0
+!modelo coceitual(URL da imagem)
+
