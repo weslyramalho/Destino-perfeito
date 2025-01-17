@@ -1,0 +1,94 @@
+:root {
+    --bg-color: #ffffff;
+    --primary-color: #3F7373;
+    --second_color: #732B1A;
+    --terc-color: #A64826;
+    --quart-color: #BF754B;
+    --quint-color: #BABDBF; 
+  }
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    border: 2px solid red; /* Apenas para visualizar melhor o layout */
+  }
+
+.Header{
+    display: flex;
+    height: 150px;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.Header_Info{
+    display: flex;
+    width: 50%;
+    height: 80px;
+    background-color: var(--quint-color);
+    border-radius: 0px 0px 0px 50px;
+    justify-content: space-between;
+  
+}
+.Contato {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--second_color);
+    height: 100%;
+    width: 40%;
+    border-radius: 0px 0px 0px 50px;
+    color: #ffffff;
+    font-weight: bolder;
+    gap: 8px;
+}
+.Icons{
+    width: 30px;
+    height: 30px;
+    color: #ffffff;
+}
+.Ajuda{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+.Minhas_viagens {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.Login{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+a{ 
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 8px;
+    color: black;
+}
+.Telefone {
+    color: #ffffff;
+}
+.Nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.Icon_nav{
+    margin-left: 5px;
+    display: flex;
+    flex-direction: column;
+}
