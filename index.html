@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="imagex/png" href="./images/log.ico">
     <link rel="stylesheet" href="./css/styled.css" />
+    <script src="./app/main.js"></script>
     <title>Destino Perfeito</title>
 
 </head>
@@ -37,22 +38,41 @@
             </div>
             <div class="Pesquisa">
                 <div class="Pesquisa_area">
-                    <div class="Pesquisa_area_btn1">
-                        <h2>Hospedagens</h2>
-                        <button class="btn">Todos</button>
-                        <button class="btn">Hotéis</button>
-                        <button class="btn">Aluguéis por temporada</button>
-                    </div>
-                    <div class="Pesquisa_area_input">
-                        <label>DESTINO</label>
-                        <input type="text" placeholder="Insira uma cidade, hospedagem ou pacote">
-                        <label>DATAS</label>
-                        <input type="date" placeholder="Entrada">
-                        <input type="date" placeholder="Saida">
+                    <div class="Pesquisa_area_dados">
+                            <form>
+                                <div class="Area_input">
+                                    <div class="Area_input_btn">
+                                        <form id="Form" action="/submit" method="post">
+                                            <label>
+                                                <input value="idaeVolta" name="opcao" type="radio" id="idaeVolta">Ida e Volta
+                                            </label>
+                                            <label>
+                                                <input value="soIda" name="opcao" type="radio" id="SOIda">Só ida
+                                            </label>
+                                            <div class="Input_text" id="origemInput">
+                                                <label for="origem">Origem</label>
+                                                <input class="Campo_input" type="text" id="origem" name="origem">
+                                                <img class="Icons" src="./images/two-arrows.png">
+                                                <label for="origem">Destino</label>
+                                                <input class="Campo_input" type="text" id="origem" name="origem">
+                                            </div>
+                                        </form>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
                     </div>
                 </div>
+                </form>
             </div>
         </div>
+
+        <div class="">
+
+        </div>
+    </div>
+    </div>
+    </div>
 
     </div>
 </body>

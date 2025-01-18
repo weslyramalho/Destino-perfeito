@@ -99,6 +99,10 @@ a{
     margin-left: 5px;
     display: flex;
     flex-direction: column;
+    
+}
+.Icon_nav:hover {
+    background-color: var(--primary-color);
 }
 .Pesquisa{
     display: flex;
@@ -117,13 +121,48 @@ a{
     width: 85%;
     border-radius: 10px;
 }
-.Pesquisa_area_btn1{
+.Pesquisa_area_dados{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
 }
+.Pesquisa_area_input{
+    background-color:#ffffff;
+    height: 110px;
+    width: 98%;
+    border-radius: 10px;
+}  
 .btn{
     border-radius: 50px;
     height: 40px;
     border: 5x solid white;
+}
+.btn:active {
+    background-color: var(--second_color);
+}
+.Input_check{
+    display: none;
+}
+.Check .Input_check:checked ~ .Check{
+    background-color: var(--primary-color);
+}
+.Check{
+    background-color: #ffffff;
+}
+.Input_text {
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap:5px
+
+    
+}
+.Campo_input{
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
 }
