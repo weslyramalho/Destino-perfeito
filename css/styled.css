@@ -20,7 +20,7 @@ body {
 
 .Header{
     display: flex;
-    height: 150px;
+    height: 95px;
     justify-content: space-between;
 }
 
@@ -32,7 +32,7 @@ body {
 .Header_Info{
     display: flex;
     width: 50%;
-    height: 80px;
+    height: 60px;
     background-color: var(--quint-color);
     border-radius: 0px 0px 0px 50px;
     justify-content: space-between;
@@ -83,6 +83,14 @@ a{
 }
 .Nav{
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    
+}
+.Nav_Container{
+    display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
@@ -91,4 +99,31 @@ a{
     margin-left: 5px;
     display: flex;
     flex-direction: column;
+}
+.Pesquisa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    height: 220px;
+    width: 100%;
+
+}
+.Pesquisa_area{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--second_color);
+    height: 90%;
+    width: 85%;
+    border-radius: 10px;
+}
+.Pesquisa_area_btn1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.btn{
+    border-radius: 50px;
+    height: 40px;
+    border: 5x solid white;
 }
