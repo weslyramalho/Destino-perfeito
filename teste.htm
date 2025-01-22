@@ -1,110 +1,72 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário Dinâmico</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
+  <meta charset="UTF-8">
+  <title>Carrossel de Cards</title>
+  <style>
+    .carousel {
+      display: flex;
+      overflow: hidden;
+      width: 300px;
+    }
 
-        .form-container {
-            background-color: white;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
+    .carousel__track {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
 
-        .form-container h2 {
-            margin-bottom: 20px;
-        }
+    .carousel__card {
+      min-width: 300px;
+      box-sizing: border-box;
+      padding: 20px;
+      background-color: #f0f0f0;
+      margin-right: 10px;
+    }
 
-        .form-container label {
-            display: block;
-            margin-bottom: 5px;
-            color: #333;
-        }
-
-        .form-container input[type="text"],
-        .form-container input[type="email"],
-        .form-container input[type="password"],
-        .form-container input[type="submit"] {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 15px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-        }
-
-        .form-container input[type="submit"] {
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        .form-container input[type="submit"]:hover {
-            background-color: #45a049;
-        }
-
-        .hidden {
-            display: none;
-        }
-    </style>
+    .carousel__button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
-    <div class="form-container">
-        <h2>Formulário Dinâmico</h2>
-        <form id="dynamicForm" action="/submit" method="post">
-            <label>
-                <input type="checkbox" id="showName"> onibus
-            </label>
-            <label>
-                <input type="checkbox" id="showEmail"> Email
-            </label>
-            <label>
-                <input type="checkbox" id="showPassword"> Senha
-            </label>
-            
-            <div id="nameField" class="hidden">
-                <label for="nome">Nome</label>
-                <input type="text" id="nome" name="nome">
-            </div>
-            <div id="emailField" class="hidden">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email">
-            </div>
-            <div id="passwordField" class="hidden">
-                <label for="senha">Senha</label>
-                <input type="password" id="senha" name="senha">
-            </div>
-
-            <input type="submit" value="Enviar">
-        </form>
+  <div class="carousel">
+    <button class="carousel__button" id="prev">Anterior</button>
+    <div class="carousel__track-container">
+      <div class="carousel__track">
+        <div class="carousel__card">Card 1</div>
+        <div class="carousel__card">Card 2</div>
+        <div class="carousel__card">Card 3</div>
+        <div class="carousel__card">Card 4</div>
+      </div>
     </div>
+    <button class="carousel__button" id="next">Próximo</button>
+  </div>
 
-    <script>
-        document.getElementById('showName').addEventListener('change', function () {
-            document.getElementById('nameField').classList.toggle('hidden', !this.checked);
-        });
+  <script>
+    const track = document.querySelector('.carousel__track');
+    const prevButton = document.getElementById('prev');
+    const nextButton = document.getElementById('next');
+    let currentIndex = 0;
 
-        document.getElementById('showEmail').addEventListener('change', function () {
-            document.getElementById('emailField').classList.toggle('hidden', !this.checked);
-        });
+    prevButton.addEventListener('click', () => {
+      if (currentIndex > 0) {
+        currentIndex--;
+        const moveAmount = currentIndex * -310;
+        track.style.transform = `translateX(${moveAmount}px)`;
+      }
+    });
 
-        document.getElementById('showPassword').addEventListener('change', function () {
-            document.getElementById('passwordField').classList.toggle('hidden', !this.checked);
-        });
-    </script>
+    nextButton.addEventListener('click', () => {
+      if (currentIndex < track.children.length - 1) {
+        currentIndex++;
+        const moveAmount = currentIndex * -310;
+        track.style.transform = `translateX(${moveAmount}px)`;
+      }
+    });
+  </script>
 </body>
 </html>

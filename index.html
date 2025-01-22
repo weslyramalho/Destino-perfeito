@@ -29,7 +29,7 @@
         </div>
         <div class="Nav">
             <div class="Nav_Container">
-                <a class="Icon_nav" href="/"><img class="Icons" src="./images/bed.png" alt="cama"> Hospedagens</a>
+                <a class="Icon_nav" href="/"><img class="Icons" src="./images/bed.svg" alt="cama"> Hospedagens</a>
                 <a class="Icon_nav" href="/"><img class="Icons" src="./images/flight.png" alt="cama"> Passagens</a>
                 <a class="Icon_nav" href="/"><img class="Icons" src="./images/luggage.png" alt="cama"> Pacotes</a>
                 <a class="Icon_nav" href="/"><img class="Icons" src="./images/tiket.png" alt="cama"> Passeios</a>
@@ -39,41 +39,72 @@
             <div class="Pesquisa">
                 <div class="Pesquisa_area">
                     <div class="Pesquisa_area_dados">
-                            <form>
-                                <div class="Area_input">
-                                    <div class="Area_input_btn">
-                                        <form id="Form" action="/submit" method="post">
-                                            <label>
-                                                <input value="idaeVolta" name="opcao" type="radio" id="idaeVolta">Ida e Volta
-                                            </label>
-                                            <label>
-                                                <input value="soIda" name="opcao" type="radio" id="SOIda">Só ida
-                                            </label>
-                                            <div class="Input_text" id="origemInput">
-                                                <label for="origem">Origem</label>
-                                                <input class="Campo_input" type="text" id="origem" name="origem">
-                                                <img class="Icons" src="./images/two-arrows.png">
-                                                <label for="origem">Destino</label>
-                                                <input class="Campo_input" type="text" id="origem" name="origem">
-                                            </div>
-                                        </form>
-                                        </div>
+                        <div class="Area_input">
+                            <div class="Area_input_btn">
+                                <form id="Form" action="/submit" method="post">
+                                    <div class="Form_Label">
+                                        <h1>Passeios</h1>
                                     </div>
-                                </div>
+                                    <div class="Input">
+                                        <div class="Input_text" id="origemInput">
+                                            <label for="destino">Destino</label>
+                                            <input class="Campo_input" type="text" id="destino" name="destino"
+                                                placeholder="Digite o seu destino">
+                                        </div>
+                                        <div class="Input_calendario">
+                                            <label for="origem">DATAS</label>
+                                            <input class="Campo_input" type="date" id="ida" name="ida"
+                                                placeholder="Ida">Desde
+                                            <input class="Campo_input" type="date" id="volta" name="volta"
+                                                placeholder="Volta">Até
+                                        </div>
+                                        <button class="Btn_1">Buscar</button>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
-                </form>
             </div>
         </div>
+        <div class="Main">
+            <div class="Main_Section">
+                <h2>Os melhores passeios </h2>
+                <div class="Cards">
+                    <div class="Card_1">
+                        <img class="Cards_img" src="./images/hallstatt-3609863_1280.jpg" alt="Hallstatt áustria">
+                        PASSEIO
+                        <h3>Hallstatt Áustria</h3>
+                        <h5>Em Áustria</h5>
+                    </div>
+                    <div class="Card_1">
+                        <img class="Cards_img" src="./images/hallstatt-3609863_1280.jpg" alt="Hallstatt áustria">
+                        PASSEIO
+                        <h3>Hallstatt Áustria</h3>
+                        <h5>Em Áustria</h5>
+                    </div>
+                    <div class="Card_1">
+                        <img class="Cards_img" src="./images/hallstatt-3609863_1280.jpg" alt="Hallstatt áustria">
+                        PASSEIO
+                        <h3>Hallstatt Áustria</h3>
+                        <h5>Em Áustria</h5>
+                    </div>
+                    <div class="Card_1">
+                        <img class="Cards_img" src="./images/hallstatt-3609863_1280.jpg" alt="Hallstatt áustria">
+                        PASSEIO
+                        <h3>Hallstatt Áustria</h3>
+                        <h5>Em Áustria</h5>
+                    </div>
+                    <div class="Card_1">
+                        <img class="Cards_img" src="./images/hallstatt-3609863_1280.jpg" alt="Hallstatt áustria">
+                        PASSEIO
+                        <h3>Hallstatt Áustria</h3>
+                        <h5>Em Áustria</h5>
+                    </div>
+                </div>
 
-        <div class="">
-
+            </div>
         </div>
-    </div>
-    </div>
-    </div>
-
     </div>
 </body>
 
