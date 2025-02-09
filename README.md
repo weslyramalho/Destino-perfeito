@@ -26,6 +26,10 @@ Este projeto refere-se a uma agência de viagens, estruturando tanto a interface
 
 - Físico: Representação final, pronta para implementação.
 ```  
+CREATE DATABASE dbdestinoperfeito;
+
+USE dbdestinoperfeito;
+
 CREATE TABLE Empresa ( 
 Nome VARCHAR(50),
 id_empresa VARCHAR(10) PRIMARY KEY, 
